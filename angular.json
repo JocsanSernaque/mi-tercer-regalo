@@ -21,14 +21,14 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/logo.svg",
+              "src/logoIco.svg",
               {
                 "glob": "**/*",
                 "input": "src/assets",
                 "output": "assets"
               },
               {
-                "glob": "logo.svg",
+                "glob": "logoIco.svg",
                 "input": "src",
                 "output": "/"
               },
@@ -95,14 +95,14 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              "src/logo.svg",
+              "src/logoIco.svg",
               {
                 "glob": "**/*",
                 "input": "src/assets",
                 "output": "assets"
               },
               {
-                "glob": "logo.svg",
+                "glob": "logoIco.svg",
                 "input": "src",
                 "output": "/"
               },
