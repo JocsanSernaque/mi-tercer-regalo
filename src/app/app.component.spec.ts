@@ -24,6 +24,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, mi-tercer-regalo');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Cómplices de tus fechas especiales');
   });
 });
