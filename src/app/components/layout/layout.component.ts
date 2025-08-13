@@ -5,11 +5,12 @@ import { FooterComponent } from "../footer/footer.component";
 import { AboutComponent } from "../about/about.component";
 import { ProductsComponent } from "../products/products.component";
 import { ServicesComponent } from "../services/services.component";
+import { HeaderComponent } from "../header/header.component";
 
 @Component({
   selector: 'app-layout',
   standalone: true,
-  imports: [NavbarComponent, RouterOutlet, FooterComponent, AboutComponent, ProductsComponent, ServicesComponent],
+  imports: [NavbarComponent, RouterOutlet, FooterComponent, AboutComponent, ProductsComponent, ServicesComponent, HeaderComponent],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.css'
 })

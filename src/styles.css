@@ -1,2 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
+/* Marquee hecho con Tailwind + @layer */
+@keyframes marquee {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+.marquee-pause:hover .animate-marquee {
+    animation-play-state: paused;
+}
