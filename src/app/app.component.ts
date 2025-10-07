@@ -6,11 +6,10 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
 import { HomeComponent } from "./components/home/home.component";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [ HomeComponent, RouterOutlet, HeaderComponent, NavbarComponent, FooterComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+    selector: 'app-root',
+    imports: [HomeComponent, RouterOutlet, HeaderComponent, NavbarComponent, FooterComponent],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'mi-tercer-regalo';

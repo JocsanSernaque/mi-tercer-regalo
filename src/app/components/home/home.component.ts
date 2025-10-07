@@ -6,11 +6,10 @@ import { RouterOutlet } from "../../../../node_modules/@angular/router/index";
 import { TestimonialsComponent } from "../pages/testimonials/testimonials.component";
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [ProductsComponent, ServicesComponent, AboutComponent, TestimonialsComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+    selector: 'app-home',
+    imports: [ProductsComponent, ServicesComponent, AboutComponent, TestimonialsComponent],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.css'
 })
 export class HomeComponent {
 
