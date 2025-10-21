@@ -8,5 +8,8 @@ import { RouterLink, RouterOutlet } from '@angular/router';
     styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-
+    menuOpen = false;
+    toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
 }
