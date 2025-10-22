@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 /* Marquee hecho con Tailwind + @layer */
 @keyframes marquee {
@@ -6,7 +7,7 @@
   100% { transform: translateX(-100%); }
 }
 .animate-marquee {
-  animation: marquee 20s linear infinite;
+  animation: marquee 15s linear infinite;
 }
 .marquee-pause:hover .animate-marquee {
     animation-play-state: paused;
@@ -24,4 +25,8 @@
 
 .animate-slide-down {
   animation: slide-down 0.3s ease-out;
+}
+.raleway-font {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
 }
