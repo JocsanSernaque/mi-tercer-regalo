@@ -1,18 +1,18 @@
 <!-- HEADER SEO-FRIENDLY -->
-<header class="bg-[#f5284a] text-white overflow-hidden relative">
+<header class="bg-[#fffb04] text-white overflow-hidden relative">
   <div class="mx-auto py-1 px-4">
     <!-- Texto animado -->
     <div class="flex justify-center items-centerrelative overflow-hidden whitespace-nowrap marquee-pause">
-      <p class="animate-marquee inline-block space-x-5">
-         <span class=" text-amber-300 font-bold uppercase">¡Super Ofertas¡</span>
-         <a href="/" class="underline italic"> Ver Más</a>
-         <span class=" text-amber-300 font-bold uppercase"> ¡Super Ofertas¡</span>
-         <!-- <span class=""> Por el Día del Niño </span> -->
-         <a href="/" class="underline italic"> Ver Más</a>
-         <span class=" text-amber-300 font-bold uppercase"> ¡Super Ofertas¡</span>
-         <!-- <span class=""> Por el Día del Niño </span> -->
-         <a href="/" class="underline italic"> Ver Más </a>                
-      </p>
+      <div class="animate-marquee inline-block space-x-5">
+        @for (item of items; track $index) {
+          <span class="text-[#f52839] font-bold uppercase mx-4">
+            {{ item.text }}
+          </span>
+          <a [href]="item.link" target="_blank" class="underline italic mx-2">
+            Ver Más
+          </a>
+        }               
+      </div>
     </div>
   </div>
 </header>
