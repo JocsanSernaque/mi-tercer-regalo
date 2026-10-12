@@ -1,19 +1,30 @@
 <main class="min-h-[calc(30vh-200px)] bg-pink-50">
     <section class="flex flex-col md:flex-row items-center justify-center w-full h-[90vh] gap-2 px-10 lg:p-20">
     
-        <div class="flex flex-col w-full m:w-1/2 text-center items-center justify-between md:items-start md:text-left gap-3">
-            <div class="hidden md:block rounded-full bg-pink-100 text-[#e14149] px-6 py-3 items-center justify-center gap-2">
-              <span>
-                Ofertas Exclusivas
+        <div class="flex flex-col w-full m:w-1/2 text-center items-center justify-between md:items-start md:text-left gap-2">
+            <div class="flex rounded-full bg-pink-100 text-[#e14149] px-6 py-3 items-center justify-center gap-2">
+              <img src="assets/images/icons/corazon.svg" alt="corazon" class="h-4 w-auto">
+              <span class="flex uppercase">
+                <!-- Ofertas Exclusivas -->
+                DETALLES QUE ENAMORAN
               </span>
             </div>
-            <h1 class="text-gray-700 text-3xl md:text-6xl font-semibold raleway-font uppercase tracking-wide">Cómplices de tus fechas especiales</h1>
-            <h2 class="text-gray-800 md:text-2xl">Haz que hoy sea un día para recordar</h2>
-            <div class="m-4 flex flex-col items-center justify-between md:flex-row gap-4 w-full">
-              <a href="/productos" class="text-center bg-[#f5284a] text-white rounded-lg hover:bg-[#fc516d] px-6 py-3 hover:bg-primary-800 transition-colors duration-300 w-50">
+            <h1 class="text-gray-800 text-3xl md:text-6xl font-semibold montserrat tracking-wide">Cómplices de tus fechas especiales</h1>
+            <h2 class="text-gray-600 md:text-2xl raleway-font">Haz que hoy sea un día para recordar</h2>
+            <div class="m-4 flex justify-center items-center md:justify-start flex-col md:flex-row gap-4 w-full">
+              <a href="/productos" class="flex text-center bg-[#f5284a] text-white rounded-lg hover:bg-[#fc516d] px-6 py-3 hover:bg-primary-800 transition-colors duration-300 w-65 gap-2 items-center justify-center">
+                <img src="assets/images/icons/regalo.svg" alt="icon regalo" class="h-6 w-auto">
+                <span>
                   Encuentra tu Regalo
+                </span>
               </a>
-              <div class="flex md:mr-20">                
+              <a href="https://wa.me/51955254056" target="_blank" class="flex text-center text-[#f5284a] rounded-lg px-6 py-3 w-65 gap-2 items-center justify-center border-[#f5284a] border-2">
+                <img src="assets/images/icons/whatsapp-red.svg" alt="icon whatsapp" class="h-6 w-auto">
+                <span>
+                  Consulta por Whatsapp
+                </span>
+              </a>
+              <!-- <div class="flex md:mr-20">                
                 <div class="flex space-x-4">  
                   <a href="https://www.facebook.com/profile.php?id=100063692034176" target="_blank" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" fill="#e14149" width="30" height="30" viewBox="0 0 50 50">
@@ -31,13 +42,13 @@
                     </svg>
                   </a>
                   </div>
-              </div>
+              </div> -->
             </div>
         </div>
         <div class="w-[320px] md:w-[768px]">
           <picture class="flex items-center justify-center">
-            <source srcset="assets/images/products/munecos/osita-amor.webp" media="(max-width: 768px)">
-            <img src="assets/images/products/munecos/osita-amor.webp" alt="Osita Amor de Mi Tercer Regalo" class="w-full max-w-lg object-contain mx-auto md:mx-0" loading="lazy"/>
+            <source srcset="assets/images/products/munecos/osito.webp" media="(max-width: 768px)">
+            <img src="assets/images/products/munecos/osito.webp" alt="Osita Amor de Mi Tercer Regalo" class="w-full max-w-lg object-contain mx-auto md:mx-0" loading="lazy"/>
           </picture>
         </div>
 
@@ -45,7 +56,7 @@
   <!-- <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
     <h1 class="text-white text-4xl md:text-6xl font-bold">Mi Tercer Regalo</h1>
   </div> -->
-    </section>
+    </section>    
 </main>
 <!-- <router-outlet></router-outlet> -->
 <app-products></app-products>
