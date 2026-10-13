@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { CartService } from '../../service/cart';
 
 @Component({
     selector: 'app-navbar',
@@ -12,4 +13,6 @@ export class NavbarComponent {
     toggleMenu() {
     this.menuOpen = !this.menuOpen;
   }
+
+  readonly carrito = inject(CartService)
 }

@@ -6,6 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ServicesComponent } from './components/pages/services/services.component';
 import { TestimonialsComponent } from './components/pages/testimonials/testimonials.component';
 import { QuestionsComponent } from './components/pages/questions/questions.component';
+import { CartComponent } from './components/cart/cart.component';
 
 export const routes: Routes = [
      { path: '', component: HomeComponent },
@@ -15,6 +16,7 @@ export const routes: Routes = [
      { path: 'servicios', component: ServicesComponent },
      { path: 'nosotros', component: AboutComponent },
      { path: 'testimonios', component: TestimonialsComponent },
-     { path: 'preguntas-frecuentes', component: QuestionsComponent },  
+     { path: 'preguntas-frecuentes', component: QuestionsComponent },
+     { path: 'carrito', component: CartComponent },     
      { path: '**', component: NotfoundComponent }
 ];
